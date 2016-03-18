@@ -1,5 +1,5 @@
 Marionette = require('backbone.marionette')
-tpl = require ('../templates/index.jade')
+tpl = require ('./layout-template.jade')
 
 class MainLayoutView extends Marionette.View
 
