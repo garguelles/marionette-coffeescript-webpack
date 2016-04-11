@@ -1,19 +1,15 @@
 $ = require('jquery')
+Radio = require('backbone.radio')
 Marionette = require('backbone.marionette')
-MainRouter = require('../routers/main')
 LayoutView = require('./layout-view')
+
+routerChannel = Radio.channel('router')
 
 class Application extends Marionette.Application
 
   initialize: ->
-    console.log('App Initialize')
-    router = new MainRouter()
-
-  start: ->
-    Backbone.history.start() if Backbone.history
-    $body = $('body')
-    $body.html(new LayoutView().render().el)
+    @body = $('body')
+    @layout = new LayoutView()
+    @layout.render()
 
 module.exports = Application
-
-
