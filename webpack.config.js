@@ -29,8 +29,6 @@ module.exports.development = {
       'window.jQuery': 'jquery',
       'Promise': 'promise-polyfill',
       'window.Promise': 'promise-polyfill'
-      /*'Backbone': 'backbone',
-      'window.Backbone': 'backbone'*/
     })
   ]
 };

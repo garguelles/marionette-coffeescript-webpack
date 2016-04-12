@@ -12,7 +12,6 @@ class Application extends Marionette.Application
     @layout.render()
 
   onStart: ->
-    console.log('app starting')
     if Backbone.history
       Backbone.history.start()
 
