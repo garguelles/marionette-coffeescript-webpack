@@ -8,19 +8,19 @@
     "frontend",
     "boilerplate",
     "marionette",
-    "es6",
-    "webpack"
+    "webpack",
+    "coffee-script"
   ],
   "main": "index.html",
   "scripts": {
     "start": "gulp",
     "test": "karma start"
   },
-  "author": "@sabarasaba <rivasign@gmail.com>",
+  "author": "@garguelles <gerard.arguelles@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/sabarasaba/modern-backbone-starterkit.git"
+    "url": "https://github.com/garguelles/marionette-coffeescript-webpack"
   },
   "devDependencies": {
     "babel-core": "^6.1.2",
@@ -43,6 +43,7 @@
     "gulp-watch": "^4.1.1",
     "handlebars": "^4.0.3",
     "handlebars-loader": "^1.1.4",
+    "imports-loader": "^0.6.5",
     "jade": "^1.11.0",
     "jade-loader": "^0.8.0",
     "karma": "0.13.11",
@@ -58,6 +59,7 @@
   "dependencies": {
     "backbone": "^1.1.2",
     "backbone.marionette": "^3.0.0-pre.2",
+    "bootstrap": "^3.3.6",
     "jquery": "^2.1.3",
     "lodash": "^3.5.0"
   }

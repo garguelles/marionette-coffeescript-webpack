@@ -4,6 +4,8 @@ output = {
   filename: 'main.js'
 };
 
+var webpack = require('webpack');
+
 module.exports.development = {
   debug : true,
   devtool : 'eval',
@@ -19,7 +21,14 @@ module.exports.development = {
   },
   resolve: {
     extensions: ['', '.js', '.json', '.coffee']
-  }
+  },
+  plugins: [
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery'
+    })
+  ]
 };
 
 module.exports.production = {
