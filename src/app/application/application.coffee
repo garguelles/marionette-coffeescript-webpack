@@ -1,4 +1,3 @@
-$ = require('jquery')
 Radio = require('backbone.radio')
 Marionette = require('backbone.marionette')
 LayoutView = require('./layout-view')
@@ -11,5 +10,10 @@ class Application extends Marionette.Application
     @body = $('body')
     @layout = new LayoutView()
     @layout.render()
+
+  onStart: ->
+    console.log('app starting')
+    if Backbone.history
+      Backbone.history.start()
 
 module.exports = Application
