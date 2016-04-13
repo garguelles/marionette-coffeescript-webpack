@@ -1,6 +1,4 @@
 Backbone = require('backbone')
-$ = require('jquery')
-Backbone.$ = $
 Marionette = require('backbone.marionette')
 bootstrap = require("bootstrap")
 
