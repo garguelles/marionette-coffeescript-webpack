@@ -7,11 +7,12 @@ app = new Application()
 window.App = app
 
 # initialize services
-app.services.headerService = new HeaderService
+app.registerService(new HeaderService
   container: app.layout.getRegion('header')
-
+)
 # initialize routers
 app.index = new IndexRouter
   container: app.layout.getRegion('content')
+
 
 app.start();
