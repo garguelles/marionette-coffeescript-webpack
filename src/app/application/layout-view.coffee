@@ -6,8 +6,8 @@ class MainLayoutView extends Marionette.View
   template: tpl,
 
   regions:
-    contentRegion: '.content__region'
-    headerRegion: '.header__region'
-    footerRegion: '.footer__region'
+    content: '.content__region'
+    header: '.header__region'
+    footer: '.footer__region'
 
 module.exports = MainLayoutView
