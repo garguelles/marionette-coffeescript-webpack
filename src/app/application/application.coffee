@@ -7,10 +7,6 @@ _ = require('lodash')
 routerChannel = Radio.channel('router')
 servicesChannel = Radio.channel('services')
 
-##
-## TODO: think of a way to handle invoking services
-## using a mediator pattern
-##
 class Application extends Marionette.Application
 
   initialize: ->
@@ -30,7 +26,6 @@ class Application extends Marionette.Application
   registerService: (service) ->
     @_services[service.id] = service
 
-  ## TODO: implement extensions
   use: (module) ->
     throw new Error('module must have a name') unless module.name
 

@@ -15,4 +15,4 @@ app.index = new IndexRouter
   container: app.layout.getRegion('content')
 
 
-app.start();
+app.start()
